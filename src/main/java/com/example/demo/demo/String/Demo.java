@@ -1,17 +1,14 @@
 package com.example.demo.demo.String;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Demo {
     public static void main(String[] args) {
 
-        String str1 = new StringBuilder("计算机").append("软件").toString();
-        System.out.println(str1.intern() == str1);
+        System.out.println(get());
 
-        String str2 = new StringBuilder("ja").append("va").toString();
-        System.out.println(str2.intern() == str2);
-
+    }
+    private static Map get(){
+        return new HashMap();
     }
 }
