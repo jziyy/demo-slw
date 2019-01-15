@@ -13,10 +13,19 @@ public class DemoApplicationTests {
 
     @Autowired
     UserBean bean;
+    @Autowired
+    UserBean bean1;
     @Test
     public void contextLoads() {
-
+        bean.setName("aaaa");
+        bean.setPassword("aaaa");
         System.out.println(bean);
+        System.out.println(bean1);
+    }
+    @Test
+    public void aaa() {
+        System.out.println(bean);
+        System.out.println(bean1);
     }
 
 }
