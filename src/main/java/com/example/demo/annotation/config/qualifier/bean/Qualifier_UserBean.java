@@ -1,45 +1,15 @@
-package com.example.demo.annotation.config.qualifier.bean;
+package com.example.demo.annotation.bean;
 
-import org.springframework.beans.factory.annotation.Value;
+import lombok.Data;
 
-public class Qualifier_UserBean {
-    @Value("${user.bean.name}")
+//@Configuration 中的@bean先执行后才会执行@value注解的赋值
+@Data
+public class UserBean {
+ ///   @Value("${user.bean.name}")
     private String name;
-    @Value("${user.bean.password}")
+//    @Value("${user.bean.password}")
     private String password;
-    @Value("${user.bean.state}")
+ //   @Value("${user.bean.state}")
     private String state;
 
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "Qualifier_UserBean{" +
-                "name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", state='" + state + '\'' +
-                '}';
-    }
 }
