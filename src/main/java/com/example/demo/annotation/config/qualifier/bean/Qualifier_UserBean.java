@@ -1,8 +1,8 @@
-package com.example.demo.annotation.bean;
+package com.example.demo.annotation.config.qualifier.bean;
 
 import org.springframework.beans.factory.annotation.Value;
 
-public class UserBean {
+public class Qualifier_UserBean {
     @Value("${user.bean.name}")
     private String name;
     @Value("${user.bean.password}")
@@ -36,7 +36,7 @@ public class UserBean {
 
     @Override
     public String toString() {
-        return "UserBean{" +
+        return "Qualifier_UserBean{" +
                 "name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 ", state='" + state + '\'' +

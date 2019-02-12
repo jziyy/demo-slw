@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import com.example.demo.annotation.bean.UserBean;
+import com.example.demo.annotation.config.qualifier.bean.Qualifier_UserBean;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +12,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class DemoApplicationTests {
 
     @Autowired
-    UserBean bean;
+    Qualifier_UserBean bean;
     @Autowired
-    UserBean bean1;
+    Qualifier_UserBean bean1;
     @Test
     public void contextLoads() {
         bean.setName("aaaa");

@@ -1,7 +1,7 @@
-package com.example.demo.annotation.controller;
+package com.example.demo.annotation.config.qualifier.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.example.demo.annotation.bean.UserBean;
+import com.example.demo.annotation.config.qualifier.bean.Qualifier_UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,14 +13,14 @@ import java.util.Map;
 
 
 @RestController
-public class BeanController {
+public class Qualifier_BeanController {
 
     @Autowired
     @Qualifier("userbean1")
-    UserBean bean;
+    Qualifier_UserBean bean;
     @Autowired
     @Qualifier("userbean2")
-    UserBean bean1;
+    Qualifier_UserBean bean1;
 
     @RequestMapping(value = "/aaa/aa")
     public String getInfo(@RequestParam(value = "state")String state){
