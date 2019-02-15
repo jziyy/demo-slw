@@ -14,7 +14,7 @@ public class Config {
         UserBean bean =new UserBean();
         bean.setName("aa");
         bean.setPassword("jziyy");
-        log.info("aaaaaaaaaaaa" + bean.toString());
+      //  log.info("aaaaaaaaaaaa" + bean.toString());
         return bean;
     }
     @Bean("userbean2")
@@ -23,7 +23,7 @@ public class Config {
         UserBean bean =new UserBean();
         bean.setName("aaaaaaaaaa");
         bean.setPassword("jziyy111111");
-        log.info("aaaaaaaaa" + bean.toString());
+        //log.info("aaaaaaaaa" + bean.toString());
 
         return bean;
     }

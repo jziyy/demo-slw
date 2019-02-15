@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-public class Annotation extends DemoApplicationTests {
+public class AnnotationTest extends DemoApplicationTests {
     @Autowired
     @Qualifier("userbean1")
     UserBean bean;

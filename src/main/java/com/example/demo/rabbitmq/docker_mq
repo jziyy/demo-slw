@@ -1,0 +1,4 @@
+下载带有管理界面的mq镜像
+docker pull rabbitmq:management
+运行mq镜像生成容器
+docker run -d -p 5672:5672 -p 15672:15672 --name rabbitmq rabbitmq:management
