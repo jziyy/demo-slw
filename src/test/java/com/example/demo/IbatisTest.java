@@ -19,8 +19,8 @@ public class IbatisTest extends DemoApplicationTests {
         List<Ibatis_Bean> ibatis_beanList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             Ibatis_Bean ibatis_bean = new Ibatis_Bean();
-            ibatis_bean.setName("name" + i);
-            ibatis_bean.setPassword("password" + i);
+            ibatis_bean.setName("nameA" + i);
+            ibatis_bean.setPassword("passwordA" + i);
             ibatis_beanList.add(ibatis_bean);
             System.out.println(ibatis_beanList);
         }
